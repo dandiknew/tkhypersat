@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HyperSat — выдуманный телеканал">
+    <title>HyperSat — Онлайн</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: linear-gradient(90deg, #2c2c2c, #111);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #00d4ff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .stream-title {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0,212,255,0.8);
+        }
+        .player-container {
+            margin-top: 15px;
+        }
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,212,255,0.6);
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .btn {
+            padding: 12px 20px;
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #00d4ff;
+            box-shadow: 0 0 15px rgba(0,212,255,0.6);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #00aacc;
+            box-shadow: 0 0 25px rgba(0,212,255,0.9);
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>📡 HyperSat — Выдуманный телеканал</header>
+
+    <div class="stream-title">Эфир телеканала</div>
+
+    <div class="player-container">
+        <iframe src="https://plvideo.ru/embed/RunkfSLDRhem" 
+                width="1218" 
+                height="685" 
+                frameborder="0" 
+                allowfullscreen="1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+        </iframe>
+    </div>
+
+    <div class="buttons">
+        <a href="https://t.me/tkhypersat" target="_blank" class="btn">Мы в Telegram</a>
+        <a href="https://tiktok.com/@your_channel" target="_blank" class="btn">Мы в TikTok</a>
+		<a href="https://tiktok.com/@your_channel" target="_blank" class="btn">Донат</a>
+    </div>
+
+    <footer>© 2025 HyperSat. Все права защищены.</footer>
+
+</body>
+</html>
